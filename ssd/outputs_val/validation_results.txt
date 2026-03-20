@@ -1,0 +1,9 @@
+Validation Results
+
+Precision (IoU=0.5): 74.47
+Recall (IoU=0.5): 79.55
+F1-score: 76.92
+mAP@0.5: 67.36
+mAP@0.5:0.95: 42.24
+Inference time: 38.43 ms
+FPS: 26.02

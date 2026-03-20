@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4 #<----- Nº de classes que o modelo irá avaliar/treinar/testar
+names: ['part', 'tooling', 'tooling_tag', 'without-part'] # <----- Nome das suas classes aqui
+
+roboflow:
+  workspace: ufrn-pesquisalabman
+  project: labman_ai-vc_hp
+  version: 7
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/**** # <----- sua ID aqui. Ou, exporte direto do roboflow, irá funcionar. Se não estiver usando roboflow, essa parte pode ser ignorada.
