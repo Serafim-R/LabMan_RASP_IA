@@ -1,0 +1,58 @@
+(raspIA) adilson@raspberrypi:~/Documentos/Serafim/projeto_raspIA $ python3 quantizacao/quant.py 
+WARNING ⚠️ Ultralytics settings updated to the latest schema. Existing values were preserved where possible. 
+View Ultralytics Settings with 'yolo settings' or at '/home/adilson/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+
+==========================================
+Avaliando Modelo com 32 bits no seu Dataset
+==========================================
+Calculando mAP50-95 no conjunto de validação (modelo_final/datasets/labman_rasp_IA/data.yaml)...
+Ultralytics 8.4.160 🚀 Python-3.11.2 torch-2.14.0+cu130 CPU (aarch64)
+YOLOv12n summary (fused): 159 layers, 2,557,508 parameters, 0 gradients, 7.3 GFLOPs
+Downloading https://ultralytics.com/as…: 100% ━━━━━━━━━━━━ 755.1KB 8.7MB/s 0.1s
+WARNING ⚠️ val: Slow image access detected (ping: 0.0±0.0 ms, read: 48.0±6.2 MB/s, size: 46.1 KB). Use local storage instead of remote/mounted storage for better performance. See https://docs.ultralytics.com/guides/model-training-tips
+val: Scanning /home/adilson/Documentos…: 100% ━━━━━━━━━━━━ 25/25 533.5it/s 0.0s
+val: New cache created: /home/adilson/Documentos/Serafim/projeto_raspIA/modelo_final/datasets/labman_rasp_IA/valid/labels.cache
+                 Class     Images  Instanc…: 100% ━━━━━━━━━━━━ 2/2 4.2s/it 8.4s
+                   all         25         74      0.967      0.997      0.993      0.739
+Speed: 3.7ms preprocess, 320.0ms inference, 0.0ms loss, 0.4ms postprocess per image
+Results saved to /home/adilson/Documentos/Serafim/projeto_raspIA/runs/detect/val
+
+==========================================
+Avaliando Modelo com 8 bits no seu Dataset
+==========================================
+Calculando mAP50-95 no conjunto de validação (modelo_final/datasets/labman_rasp_IA/data.yaml)...
+Ultralytics 8.4.160 🚀 Python-3.11.2 torch-2.14.0+cu130 CPU (aarch64)
+YOLOv12n summary (fused): 159 layers, 2,557,508 parameters, 0 gradients, 7.3 GFLOPs
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2080.2±485.6 MB/s, size: 47.8 KB)
+val: Scanning /home/adilson/Documentos/…: 100% ━━━━━━━━━━━━ 25/25 4.4Mit/s 0.0s
+                 Class     Images  Instanc…: 100% ━━━━━━━━━━━━ 2/2 4.2s/it 8.3s
+                   all         25         74      0.968      0.993      0.993      0.741
+Speed: 4.3ms preprocess, 318.8ms inference, 0.0ms loss, 0.4ms postprocess per image
+Results saved to /home/adilson/Documentos/Serafim/projeto_raspIA/runs/detect/val-2
+
+==========================================
+Avaliando Modelo com 4 bits no seu Dataset
+==========================================
+Calculando mAP50-95 no conjunto de validação (modelo_final/datasets/labman_rasp_IA/data.yaml)...
+Ultralytics 8.4.160 🚀 Python-3.11.2 torch-2.14.0+cu130 CPU (aarch64)
+YOLOv12n summary (fused): 159 layers, 2,557,508 parameters, 0 gradients, 7.3 GFLOPs
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2167.1±473.6 MB/s, size: 47.1 KB)
+val: Scanning /home/adilson/Documentos/…: 100% ━━━━━━━━━━━━ 25/25 4.4Mit/s 0.0s
+                 Class     Images  Instanc…: 100% ━━━━━━━━━━━━ 2/2 4.1s/it 8.3s
+                   all         25         74      0.735      0.569      0.618      0.251
+Speed: 4.3ms preprocess, 318.1ms inference, 0.0ms loss, 0.4ms postprocess per image
+Results saved to /home/adilson/Documentos/Serafim/projeto_raspIA/runs/detect/val-3
+
+==========================================
+Avaliando Modelo com 2 bits no seu Dataset
+==========================================
+Calculando mAP50-95 no conjunto de validação (modelo_final/datasets/labman_rasp_IA/data.yaml)...
+Ultralytics 8.4.160 🚀 Python-3.11.2 torch-2.14.0+cu130 CPU (aarch64)
+YOLOv12n summary (fused): 159 layers, 2,557,508 parameters, 0 gradients, 7.3 GFLOPs
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2053.3±210.4 MB/s, size: 46.1 KB)
+val: Scanning /home/adilson/Documentos/…: 100% ━━━━━━━━━━━━ 25/25 4.6Mit/s 0.0s
+                 Class     Images  Instanc…: 100% ━━━━━━━━━━━━ 2/2 4.1s/it 8.3s
+                   all         25         74          0          0          0          0
+Speed: 4.2ms preprocess, 317.1ms inference, 0.0ms loss, 0.2ms postprocess per image
+Results saved to /home/adilson/Documentos/Serafim/projeto_raspIA/runs/detect/val-4

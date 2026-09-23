@@ -1,0 +1,8 @@
+# Ambiente virtual
+raspIA/
+
+# Datasets
+modelo_final/datasets/
+
+#outputs_logs do terminal
+log.txt/
